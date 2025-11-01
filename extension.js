@@ -158,10 +158,16 @@ function showNextThikr(context) {
     `${progress}${countText}\n\n${currentThikr.text}`,
     { modal: false },
     'Next',
+    'Skip',
     'Hide'
   ).then(selection => {
     if (selection === 'Next') {
       currentAthkarSession.currentCount++;
+      showNextThikr(context);
+    } else if (selection === 'Skip') {
+      // تخطي الذكر الحالي والانتقال للذكر التالي
+      currentAthkarSession.athkarIndex++;
+      currentAthkarSession.currentCount = 0;
       showNextThikr(context);
     } else if (selection === 'Hide') {
       hideAthkarSession(context);
