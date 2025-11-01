@@ -1,0 +1,61 @@
+# Node modules
+node_modules/
+
+# Build output
+*.vsix
+out/
+dist/
+
+# VS Code
+.vscode/
+.vscode-test/
+
+# Don't ignore icon files
+!icon.png
+!icon.svg
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Package manager lock files (اختياري - شيلها لو عاوز تحفظها)
+# package-lock.json
+# yarn.lock
+
+# TypeScript (لو استخدمته مستقبلاً)
+*.tsbuildinfo

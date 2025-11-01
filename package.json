@@ -3,6 +3,8 @@
     "displayName": "أذكار الصباح والمساء",
     "description": "Extension لعرض أذكار الصباح والمساء مع تتبع التقدم",
     "version": "1.0.0",
+    "publisher": "deepra",
+    "icon": "logo.png",
     "engines": {
       "vscode": "^1.60.0"
     },
@@ -13,6 +15,13 @@
       "onStartupFinished"
     ],
     "main": "./extension.js",
+    "scripts": {
+      "package": "vsce package",
+      "publish": "vsce publish"
+    },
+    "devDependencies": {
+      "@vscode/vsce": "^2.22.0"
+    },
     "contributes": {
       "commands": [
         {
