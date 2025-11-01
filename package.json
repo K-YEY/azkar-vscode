@@ -1,0 +1,52 @@
+{
+    "name": "athkar-extension",
+    "displayName": "أذكار الصباح والمساء",
+    "description": "Extension لعرض أذكار الصباح والمساء مع تتبع التقدم",
+    "version": "1.0.0",
+    "engines": {
+      "vscode": "^1.60.0"
+    },
+    "categories": [
+      "Other"
+    ],
+    "activationEvents": [
+      "onStartupFinished"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+      "commands": [
+        {
+          "command": "athkar.showMorning",
+          "title": "أذكار الصباح"
+        },
+        {
+          "command": "athkar.showEvening",
+          "title": "أذكار المساء"
+        },
+        {
+          "command": "athkar.settings",
+          "title": "إعدادات الأذكار"
+        }
+      ],
+      "configuration": {
+        "title": "Athkar Settings",
+        "properties": {
+          "athkar.morningEndTime": {
+            "type": "string",
+            "default": "12:00",
+            "description": "وقت انتهاء أذكار الصباح (HH:MM)"
+          },
+          "athkar.eveningEndTime": {
+            "type": "string",
+            "default": "23:59",
+            "description": "وقت انتهاء أذكار المساء (HH:MM)"
+          },
+          "athkar.eveningStartTime": {
+            "type": "string",
+            "default": "16:00",
+            "description": "وقت بداية أذكار المساء (HH:MM)"
+          }
+        }
+      }
+    }
+  }
