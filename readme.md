@@ -12,7 +12,7 @@
 3. اختر **Install from VSIX...**
 4. حدد ملف الامتداد:
 
-   [⬇️ تحميل الامتداد athkar-extension-1.0.0.vsix](blob:https://github.com/754a2410-0e10-4803-ab03-7ecd8ee277c0)
+   [⬇️ تحميل الامتداد athkar-extension-1.0.0.vsix](./athkar-extension-1.0.0.vsix)
 
 ---
 
